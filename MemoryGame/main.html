@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+</head>
+<body>
+    <main class="container">
+    <h1 style="color:white; font-size: 40px;">MEMORY GAME</h1>
+    <h2>Remember the following number:</h2>
+    
+    <h2> <span id="random-number"></span> </h2>
+    
+    <h2>Score: <span id="score">0</span></h2>
+    <h2 id="rightWrong">_________</h2>
+        <input type="text"  style="font-size:20px; text-align:center; margin:20px 100px 20px 100px; border-radius:10px;" id="userInput" name="userInput">
+        <button class="btn" type="button" onclick="getStringInput()">Submit Answer</button>    
+    </main>
+</body>
+</html>

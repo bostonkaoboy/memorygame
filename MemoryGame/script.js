@@ -1,12 +1,13 @@
 let storedNumber = null;
 let score = 0;
+let wrong = 0;
 let min = 1;
 let max =10;
 
 // Generate a random number between min and max
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
- }
+}
 
 // Update the HTML element with a random number
 function updateRandomNumber() {
@@ -44,7 +45,13 @@ function getStringInput() {
         console.log("Incorrect");
         element.classList.remove("green-text");
         element.classList.add("red-text");
-        document.getElementById("rightWrong").textContent="Incorrect";
+        wrong++;
+        document.getElementById("rightWrong").textContent="Incorrect: "+wrong;
+        min = min / 10;
+        max = max / 10;
+        if (wrong == 3){
+            document.getElementById("rightWrong").textContent="GAME OVER";
+        } 
         updateRandomNumber();
     }
 }
