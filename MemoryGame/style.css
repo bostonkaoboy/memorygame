@@ -1,0 +1,24 @@
+
+.red-text{
+    color:IndianRed;
+}
+.green-text{
+    color:ForestGreen;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px 20px 100px;
+    padding:10px 10px 40px 10px;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif; 
+}
+.btn {
+    padding: 3px 15px; 
+    margin: 20px 140px 20px 140px;
+    font-size: 18px; 
+    border-radius: 10px;
+}
